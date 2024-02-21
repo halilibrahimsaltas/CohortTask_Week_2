@@ -1,29 +1,22 @@
 import java.util.Scanner;
-
 public class Main {
     //Pattern of 5
-
-    static int number (int inp) { //function
-        Scanner input= new Scanner(System.in);
-        System.out.println("Enter a number: "); //İnput
-        inp=input.nextInt();
-        int t=inp;
-        do { // loop
-            System.out.print(t+" ");// output
-            t -= 5;  //decrease
-        } while (t > 0);{
-
-       }
-       if (t<=0){
-            for(;t<=inp;t +=5){ //increase
-                System.out.print(t +" ");// output
-            }
+    static void number (int inp) { //function
+        if(inp<=0){
+            System.out.print(inp+ " ");
+            return;
         }
-      return 0;
+        System.out.print(inp+ " ");
+        number(inp-5);
+        System.out.print(inp+ " ");
     }
 
     public static void main(String[] args) {
-        number(1);
+        Scanner input= new Scanner(System.in);
+        System.out.println("Enter a number: "); //İnput
+        int inp=input.nextInt();
+        number(inp);
 
     }
 }
+
