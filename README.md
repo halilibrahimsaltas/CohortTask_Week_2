@@ -8,7 +8,7 @@ There are practices to be done during the second week of the bootcamp.
 
  1	Polindrome
 
- 2	Advance Calculator
+ 2	Advanced Calculator
 
  3	Recursive Exponential
 
