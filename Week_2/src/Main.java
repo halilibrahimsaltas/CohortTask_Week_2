@@ -9,7 +9,6 @@ public class Main {
             reverseNumber=(reverseNumber*10)+ lastNumber;
             temp /=10;
         }
-
         if (number==reverseNumber)
             return  true;
         else
