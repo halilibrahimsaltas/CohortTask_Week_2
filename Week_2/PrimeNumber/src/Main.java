@@ -10,7 +10,7 @@ public class Main {
                 return false;
             }
         }
-        return true;
+        return isPrime(number);
     }
     public static void main(String[] args) {
         int number ;
