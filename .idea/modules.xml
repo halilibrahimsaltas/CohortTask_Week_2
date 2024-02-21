@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CohortTask_Week_2.iml" filepath="$PROJECT_DIR$/CohortTask_Week_2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Week_2/Hast/Hast.iml" filepath="$PROJECT_DIR$/Week_2/Hast/Hast.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week_2/PolindromNumber/-.iml" filepath="$PROJECT_DIR$/Week_2/PolindromNumber/-.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CohortTask_2.iml" filepath="$PROJECT_DIR$/CohortTask_2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_2/Task_1/Task_1.iml" filepath="$PROJECT_DIR$/Week_2/Task_1/Task_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_2/Week_2.iml" filepath="$PROJECT_DIR$/Week_2/Week_2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_2/kast/kast.iml" filepath="$PROJECT_DIR$/Week_2/kast/kast.iml" />
