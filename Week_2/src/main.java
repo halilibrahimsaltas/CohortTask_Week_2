@@ -3,40 +3,30 @@ import java.util.Scanner;
 public class main {
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
-        int q = input.nextInt();
+        Scanner input= new Scanner(System.in);
+        int line=0;
+        int sum=0;
+        int n = input.nextInt();
+        int[] list = new int[n];
+        for (int p = 0; p < n; p++) {
+            int t = input.nextInt();
+            list[p] = t;
+        }
 
-        for (int i = 0; i < q; i++) {
-            int n = input.nextInt();
-            int[] list = new int[n];
-            int leap = input.nextInt();
-            for (int p = 0; p < n; p++) {
-                int t = input.nextInt();
-                list[p] = t;
+        for (int i=0; i<list.length;i++){
+            sum=0;
+            for(int j=i;j< list.length;j++){
+                sum+=list[j];
+                if(sum<0){
+                    line++;
+
+                }else if (j== (list.length-1)){
+                    sum =0;
+                }
+
             }
-            if (canWin(list, leap)) {
-                System.out.println("YES");
-            } else {
-                System.out.println("NO");
-            }
         }
-    }
+        System.out.println(line);
 
-    public static boolean canWin(int[] list, int leap) {
-        return canWinHelper(list, leap, 0);
-    }
-
-    private static boolean canWinHelper(int[] list, int leap, int index) {
-        if (index < 0 || list[index] == 1) {
-            return false;
-        }
-        if (index >= list.length - 1 || index + leap >= list.length) {
-            return true;
-        }
-
-        list[index] = 1; // Mark as visited
-        return canWinHelper(list, leap, index + 1) ||
-                canWinHelper(list, leap, index - 1) ||
-                canWinHelper(list, leap, index + leap);
     }
 }
